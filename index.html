@@ -3,117 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Automation Stream Links</title>
-  <style>body {
-      background-color: #1a1a1a;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .main-header {
-      background-color: #111;
-      padding: 25px 10px 10px;
-      text-align: center;
-      color: white;
-      border-bottom: 1px solid #333;
-    }
-
-    .main-header h1 {
-      margin: 0;
-      font-size: 30px;
-      color: #00ffe5;
-      letter-spacing: 1px;
-    }
-
-    .main-header p {
-      margin: 5px 0;
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    .main-header .update {
-      font-size: 12px;
-      color: #888;
-      margin-top: 4px;
-    }
-
-    .league-bar {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 12px 0;
-      background-color: #111;
-      border-bottom: 1px solid #222;
-    }
-
-    .league-bar span {
-      margin: 5px 10px;
-      padding: 6px 14px;
-      cursor: pointer;
-      color: #00ffe5;
-      border-radius: 5px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .league-bar span:hover,
-    .league-bar span.active {
-      background-color: #ff4c4c;
-      color: white;
-      transform: scale(1.1);
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      padding: 30px 10px;
-    }
-
-    .box {
-      width: 90%;
-      min-height: 70px;
-      background-color: #000;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 12px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border: 1px solid #333;
-    }
-
-    .box:hover {
-      background-color: #222;
-    }
-
-    .box.clicked {
-      background-color: red !important;
-      color: #fff;
-      box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
-    }
-
-    .link-title {
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 1px;
-      color: #00ffe5;
-    }
-
-    .link-subtext {
-      font-size: 13px;
-      color: #cccccc;
-      margin-top: 5px;
-    }
-
-    .hidden {
-      display: none;
-    }
-</style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -127,7 +17,7 @@
   <div class="league-bar">
     <span class="active" onclick="filterBoxes('NBA', this)">NBA (10)</span>
     <span onclick="filterBoxes('NHL', this)">NHL (5)</span>
-    <span onclick="filterBoxes('MMA', this)">MMA (2)</span>
+    <span onclick="filterBoxes('MMA', this)">MMA (5)</span>
     <span onclick="filterBoxes('BOXING', this)">BOXING (2)</span>
     <span onclick="filterBoxes('MLB', this)">MLB (5)</span>
     <span onclick="filterBoxes('TENNIS', this)">TENNIS (2)</span>
@@ -206,6 +96,18 @@
     </div>
     <div class="box hidden" data-league="MMA" data-link="https://live.tvsportslive.xyz/p/mma2.html">
       <div class="link-title">MMA.2</div>
+      <div class="link-subtext">Click to copy link</div>
+    </div>
+    <div class="box hidden" data-league="MMA" data-link="https://live.tvsportslive.xyz/p/mma3.html">
+      <div class="link-title">MMA.3</div>
+      <div class="link-subtext">Click to copy link</div>
+    </div>
+    <div class="box hidden" data-league="MMA" data-link="https://live.tvsportslive.xyz/p/mma4.html">
+      <div class="link-title">MMA.4</div>
+      <div class="link-subtext">Click to copy link</div>
+    </div>
+    <div class="box hidden" data-league="MMA" data-link="https://live.tvsportslive.xyz/p/mma5.html">
+      <div class="link-title">MMA.5</div>
       <div class="link-subtext">Click to copy link</div>
     </div>
     <!-- BOXING Links Boxes -->
